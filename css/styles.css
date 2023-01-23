@@ -1,0 +1,341 @@
+/* estilos globales */
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+/* Grid */
+.grid {
+  display: grid;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.advert {
+  grid-area: advert;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-template-areas-1 {
+  grid-template-areas:
+    "logo nav nav"
+    "sidenav content advert"
+    "sidenav footer footer"
+  ;
+}
+
+.grid-template-areas-2 {
+  grid-template-areas:
+    "sidenav logo nav"
+    "sidenav content advert"
+    "sidenav content footer"
+  ;
+}
+
+.grid-template-areas-3 {
+  grid-template-areas:
+    "logo logo"
+    "nav nav"
+    "content content"
+    "sidenav advert"
+    "footer footer"
+  ;
+}
+
+.grid-template-areas-4 {
+  grid-template-columns: 30% 60% 10%;
+  grid-template-rows: 50px 150px 50px;
+  grid-template-areas:
+    "logo nav nav"
+    "sidenav content advert"
+    "sidenav footer footer"
+  ;
+}
+
+.grid-template-areas-5 {
+  grid-template-areas:
+    "logo content nav"
+    ". content advert"
+    "sidenav footer ."
+  ;
+}
+
+/* ESTILOS CSS HEADER */
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background-color: #3E6D9C;
+}
+
+/* gradiente */
+body {
+  background-image: linear-gradient(to left, white, #3E6D9C);
+}
+
+a {
+  text-decoration: none;
+}
+
+.navegacion{
+    
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+ right: 30rem;
+   }
+
+   .navegacion li a {
+    text-decoration: none;
+    font-size: 1.8rem ;
+    color: #001253;
+    transition: all 2s ;
+ }
+
+
+ .navegacion li a:hover { 
+  background-color: chocolate;
+  padding: 10px;
+ }
+
+
+
+  /* ESTILO "BODY" */
+
+  h1{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+            color: coral;
+ }
+
+ .p__titulo{ 
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+          color: coral;
+          margin-bottom: 3rem;
+}
+
+.h2 {
+  text-align: center;
+  color: #001253;
+        font-size: 2rem;
+}
+
+.item__video {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 3rem;
+  }
+
+  .p__video{
+    font-size: 2.5rem;
+    text-align: center;
+    color:darkblue;
+  }
+
+  .video__contenedor {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+
+  .img__pag1 img {
+    height: 350px;
+   width: 400px;
+   margin-bottom: 5rem;
+ }
+
+ .img__pag1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+ }
+
+.img__pag1 p{
+   
+    font-size: 2.5rem;
+    text-align: center;
+    color:darkblue;
+}
+
+footer{ margin-top: 3rem ;
+  font-size: 1.6rem;
+background-color: coral;
+padding:2rem;
+text-align: center;
+}
+
+/* pagina PATERNIDAD */
+.paternidad__fotomanos{
+  height: 500px;
+  width: 500px;
+}
+.paternidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom:3rem;
+  font-size: 1.8rem;
+}
+
+
+h3{ margin-bottom: 3rem;}
+
+
+/* Pagina Actividades */
+
+.actividades__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom:3rem;
+  font-size: 1.8rem;
+  background-color: coral;
+}
+
+.actividades__contenedor{
+  width: 100%;
+  height: 100%;
+}
+
+.texto__actv{
+  font-size: 3.0rem;
+  align-items: center;
+}
+
+.h2__actv{
+  font-size: 3.0rem;
+  color:snow
+   }
+
+  /* pagina Ubicacion */
+  .texto__ubicacion{
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom:3rem;
+  font-size: 1.8rem;
+  background-color: coral
+
+  }
+
+  .mapa { 
+     
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 5rem;
+     
+    
+  }
+
+  /* contactos */
+
+  .form__contactos{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 5rem;
+     font-size: 1.5rem;
+     gap: 1rem;
+    }
+
+    .h2__contactos{
+      
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+              color:#0A2647;
+              margin-bottom: 3rem;
+    }
+
+
+    /* footer */
+
+  footer{
+     background-color:#2C74B3;
+  }
+   
+
+  /* gradientes */
+  @media (min-width: 768px) {
+    header{
+        flex-direction:row;
+        justify-content: space-around;
+        background-color: #2C74B3;
+    }
+  
+    body{
+     background-image: linear-gradient(to left, tomato,  #3E6D9C );
+    }
+    .navegacion li a {
+     display: flex;
+             color:#0A2647}
+  
+             .paternidad__fotomanos{ 
+              flex-direction: row;
+            }
+            
+            .paternidad img { 
+              width: 60%;
+           height: 50%;} 
+  
+           .video__contenedor {
+              flex-direction: row;
+           }
+           .img__pag1{ flex-direction: row;}
+           .img__pag1 img { 
+              width: 30%;
+           height: 20rem;}
+  
+           #la_importancia_del_padre { 
+              background-color:#3E6D9C ;
+           }
+  }
+
+  /* estilos para pantallas TABLET y primera pagina*/
+   @media (min-width: 768px) {
+    grid__header {
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #2C74B3;
+    }
+  } 

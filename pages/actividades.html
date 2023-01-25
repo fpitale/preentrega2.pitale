@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../css/styles.css">
     <title>Actividades</title>
 </head>
@@ -13,42 +16,77 @@
             <img class="img__header" src="../img/images.jfif" alt="logo">
             </a>    
 
-            <nav >
-               <ul  class="navegacion" >
-                <li>
-                    <a  href="../index.html">Inicio</a>
-                </li>
-    
-                <li>
-                    <a  href="paternindad.html">Paternidad</a>
-                </li>
-    
-                <li>
-                    <a  href="actividades.html">Actividad</a>
-                </li>
-                <li>
-                    <a  href="ubicacion.html">Ubicacion</a>
-                </li>
-                <li>
-                    <a  href="contacto.html">Contacto</a>
-                </li>
-            </ul>   
-                </nav>  
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="paternindad.html">Início</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="paternindad.html">Paternidad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="actividades.html">Actividad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
              </header>
 
              <h1 class="h1__titulo" > Universidad de los Papas</h1>
              <p class="p__titulo">Por que ser padre es una arte...</p> 
 
              <!-- seccion 1  -->
+<h2 class="h2_act"> El poder del juego: cómo la diversión y los juegos ayudan a los niños a prosperar</h2>
 
- <section class="actividades__contenedor">
-<h2 class="h2__actv"> Actividades para la familia </h2>
- <img class="foto__escuela" src="../img/educacion.jpg" alt="foto en la escuela">
+
+<p class="texto_explicativo">      Más que una simple oportunidad para la diversión, el juego es cosa seria en lo que respecta a la salud y el desarrollo de un niño. Desde el "no está... ¡acá está!", las tortitas con las manos y las escondidas hasta la rayuela, las muchas formas de jugar enriquecen el cerebro, el cuerpo y la vida del niño de maneras muy importantes.
+
+  El informe clínico de la American Academy of Pediatrics titulado, "El poder del juego: su función pediátrica para mejorar el desarrollo de los niños pequeños" (en inglés) explica cómo y por qué jugar con ambos padres y otros niños es fundamental para formar mejores cerebros, cuerpos y vínculos sociales que prosperen; todas estas cosas son importantes en el mundo actual. La investigación muestra que jugar puede mejorar las capacidades de los niños para planificar, organizar, llevarse bien con los demás y regular sus emociones. Además, el juego ayuda con el lenguaje, las destrezas matemáticas y sociales e incluso ayuda a los niños a sobrellevar el estrés.</p>
+ 
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/amistad.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/educacion.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/criancas pintando.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
 
  
 
 
-<p class="texto__actv"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, corporis! Earum illo minima nemo, nihil cumque eius doloribus dolorum qui, ratione eligendi esse! Numquam, doloremque quo mollitia autem totam aspernatur.</p>
- </section>
+
+  
+ <footer class="inicio__footer">Todos los derechos reservados a Fernando Pitale</footer>
+            
+       
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -11,82 +11,6 @@ img {
   max-width: 100%;
 }
 
-
-
-
-/* Grid */
-.grid {
-  display: grid;
-}
-
-.logo {
-  grid-area: logo;
-}
-
-.nav {
-  grid-area: nav;
-}
-
-.content {
-  grid-area: content;
-}
-
-.sidenav {
-  grid-area: sidenav;
-}
-
-.advert {
-  grid-area: advert;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.grid-template-areas-1 {
-  grid-template-areas:
-    "logo nav nav"
-    "sidenav content advert"
-    "sidenav footer footer"
-  ;
-}
-
-.grid-template-areas-2 {
-  grid-template-areas:
-    "sidenav logo nav"
-    "sidenav content advert"
-    "sidenav content footer"
-  ;
-}
-
-.grid-template-areas-3 {
-  grid-template-areas:
-    "logo logo"
-    "nav nav"
-    "content content"
-    "sidenav advert"
-    "footer footer"
-  ;
-}
-
-.grid-template-areas-4 {
-  grid-template-columns: 30% 60% 10%;
-  grid-template-rows: 50px 150px 50px;
-  grid-template-areas:
-    "logo nav nav"
-    "sidenav content advert"
-    "sidenav footer footer"
-  ;
-}
-
-.grid-template-areas-5 {
-  grid-template-areas:
-    "logo content nav"
-    ". content advert"
-    "sidenav footer ."
-  ;
-}
-
 /* ESTILOS CSS HEADER */
 
 
@@ -99,6 +23,11 @@ header {
   background-color: #3E6D9C;
 }
 
+/* navegador  */
+
+.container-fluid{ background-color: #368ff5;
+font-size: 1.5rem;}
+
 /* gradiente */
 body {
   background-image: linear-gradient(to left, white, #3E6D9C);
@@ -107,30 +36,6 @@ body {
 a {
   text-decoration: none;
 }
-
-.navegacion{
-    
-  list-style: none;
-  display: flex;
-  gap: 2rem;
- right: 30rem;
-   }
-
-   .navegacion li a {
-    text-decoration: none;
-    font-size: 1.8rem ;
-    color: #001253;
-    transition: all 2s ;
- }
-
-
- .navegacion li a:hover { 
-  background-color: chocolate;
-  padding: 10px;
- }
-
-
-
   /* ESTILO "BODY" */
 
   h1{
@@ -202,8 +107,10 @@ text-align: center;
 
 /* pagina PATERNIDAD */
 .paternidad__fotomanos{
-  height: 500px;
-  width: 500px;
+  margin-left: 20rem;
+  width: 300px;
+  margin-bottom: 2rem;
+
 }
 .paternidad {
   display: flex;
@@ -214,9 +121,26 @@ text-align: center;
   font-size: 1.8rem;
 }
 
+.lista__paternidad{font-size: 1.5rem;
+   align-items: center; 
+  flex-direction: column;}
 
-h3{ margin-bottom: 3rem;}
 
+h3 { 
+  text-align: center;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;}
+
+  .accordion-button {
+    background-color: #44a1f3;
+    color:black;
+  font-size: 1.5rem;}
+
+
+  .accordion-body{
+    font-size: 1.5rem;
+  }
 
 /* Pagina Actividades */
 
@@ -235,11 +159,18 @@ h3{ margin-bottom: 3rem;}
   height: 100%;
 }
 
+.h2_act{ margin-bottom: 2rem;
+text-align: center;}
+
 .texto__actv{
   font-size: 3.0rem;
   align-items: center;
 }
 
+.texto_explicativo{
+  font-size: 2rem;
+  color:#001253;
+}
 .h2__actv{
   font-size: 3.0rem;
   color:snow
@@ -295,8 +226,9 @@ h3{ margin-bottom: 3rem;}
   }
    
 
-  /* gradientes */
+  /* gradientes */ /* estilos para pantallas TABLET y primera pagina*/
   @media (min-width: 768px) {
+   
     header{
         flex-direction:row;
         justify-content: space-around;
@@ -306,9 +238,15 @@ h3{ margin-bottom: 3rem;}
     body{
      background-image: linear-gradient(to left, tomato,  #3E6D9C );
     }
+
     .navegacion li a {
      display: flex;
              color:#0A2647}
+
+             
+           .video__contenedor {
+            flex-direction: row;
+         }
   
              .paternidad__fotomanos{ 
               flex-direction: row;
@@ -318,9 +256,6 @@ h3{ margin-bottom: 3rem;}
               width: 60%;
            height: 50%;} 
   
-           .video__contenedor {
-              flex-direction: row;
-           }
            .img__pag1{ flex-direction: row;}
            .img__pag1 img { 
               width: 30%;
@@ -331,11 +266,5 @@ h3{ margin-bottom: 3rem;}
            }
   }
 
-  /* estilos para pantallas TABLET y primera pagina*/
-   @media (min-width: 768px) {
-    grid__header {
-      flex-direction: row;
-      justify-content: space-around;
-      background-color: #2C74B3;
-    }
-  } 
+ 
+ 

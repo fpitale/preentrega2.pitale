@@ -25,8 +25,10 @@ header {
 
 /* navegador  */
 
-.container-fluid{ background-color: #368ff5;
-font-size: 1.5rem;}
+.navbar{ background-color: #368ff5;
+font-size: 1.5rem;
+s
+}
 
 /* gradiente */
 body {
@@ -36,7 +38,7 @@ body {
 a {
   text-decoration: none;
 }
-  /* ESTILO "BODY" */
+  /* ESTILO "BODY INICIO" */
 
   h1{
     text-align: center;
@@ -183,27 +185,21 @@ text-align: center;}
   color:snow
    }
 
-  /* pagina Ubicacion */
-  .texto__ubicacion{
-     display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom:3rem;
-  font-size: 1.8rem;
-  background-color: coral
+  /* Mensajes  */
+.box { margin: 20px; }
+.box1 { background-color:#001253; }
+.box2 { background-color: orange; }
+.box3 { background-color: purple; }
+.box4 { background-color: grey; }
 
-  }
+.box {
+  transition: transform .2s; 
+}
 
-  .mapa { 
-     
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin-bottom: 5rem;
-     
-    
-  }
+.box:hover {
+  transform: scale(1.5); 
+}
+
 
   /* contactos */
 
@@ -358,21 +354,19 @@ p{
   justify-content: center;
   flex-direction: row;
 }
-/* animacion s */
-.box { margin: 20px; }
-.box1 { background-color:#001253; }
-.box2 { background-color: orange; }
-.box3 { background-color: purple; }
-.box4 { background-color: grey; }
 
-.box {
-  transition: transform .2s; 
-}
+.texto__ubicacion{ display:flex;
+ 
+  font-size: 3rem;
+color:#001253;
+justify-content: center;}
 
-.box:hover {
-  transform: scale(1.5); 
-}
+.mapa{ 
+  display: flex;
+align-items: center;
+justify-content: center;
 
+flex-wrap:wrap ;}
 
     /* footer */
 
@@ -394,15 +388,36 @@ p{
      background-image: linear-gradient(to left, tomato,  #3E6D9C );
     }
 
-    .navegacion li a {
-     display: flex;
+   .navegacion li a {
+    
              color:#0A2647}
 
-             
+             .navbar{  display:flex;
+              flex-direction: column;
+              align-items: center;}
+
+              .nav-item{
+                align-items: center;
+                gap: 5rem;
+                margin-left: 4rem ;
+              }
+
+              .nav-link { 
+                flex-direction:column;
+                align-items: center;
+                margin-left: 4rem;
+           }
+              
+
+              #collapse {display:flex;
+                flex-direction: column;
+                align-items: center;} }
+
            .video__contenedor {
             flex-direction: row;
          }
   
+         /* estilo pagina paternidad */
              .paternidad__fotomanos{ 
               flex-direction: row;
             }
@@ -419,7 +434,15 @@ p{
            #la_importancia_del_padre { 
               background-color:#3E6D9C ;
            }
-  }
+  
+           /* estilos pagina actividades */
+           .actividades__contenedor{
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           gap: 2rem;
+           margin-bottom:3rem;
+           font-size: 1.8rem;
+           background-color:#368ff5;
+          }
 
- 
- 

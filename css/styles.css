@@ -107,28 +107,29 @@ text-align: center;
 
 /* pagina PATERNIDAD */
 .paternidad__fotomanos{
-  margin-left: 20rem;
-  width: 300px;
-  margin-bottom: 2rem;
-
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 .paternidad {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   margin-bottom:3rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
-.lista__paternidad{font-size: 1.5rem;
+.lista__paternidad{font-size: 2.5rem;
    align-items: center; 
   flex-direction: column;}
 
 
-h3 { 
+.paternidad_h3{ 
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;}
 
@@ -142,6 +143,8 @@ h3 {
     font-size: 1.5rem;
   }
 
+  
+
 /* Pagina Actividades */
 
 .actividades__contenedor {
@@ -154,9 +157,13 @@ h3 {
   background-color: coral;
 }
 
-.actividades__contenedor{
-  width: 100%;
-  height: 100%;
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+ 
+  
 }
 
 .h2_act{ margin-bottom: 2rem;
@@ -200,23 +207,171 @@ text-align: center;}
 
   /* contactos */
 
-  .form__contactos{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin-bottom: 5rem;
-     font-size: 1.5rem;
-     gap: 1rem;
-    }
+  /* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-    .h2__contactos{
-      
-      text-align: center;
-      font-size: 2rem;
-      text-transform: uppercase;
-              color:#0A2647;
-              margin-bottom: 3rem;
-    }
+
+body{
+  height: 100%; 
+  font-family: 'Noto Sans', sans-serif;
+  background-color:#2C74B3; 
+}
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color:#368ff5; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color:#44a1f3; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color:#368ff5; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color:#368ff5; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color:#2C74B3; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color:#0A2647; 
+  border-color:#44a1f3; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color:#3E6D9C; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color:white;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color:rgb(14, 8, 5);
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color:#fff;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+/* mensajes */
+
+
+.grid2x2 {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 40px);  
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box { margin: 20px; }
+.box1 { background-color: red; }
+.box2 { background-color: orange; }
+.box3 { background-color: purple; }
+.box4 { background-color: grey; }
+
+.box {
+  transition: transform .2s; 
+}
+
+.box:hover {
+  transform: scale(1.5); 
+}
 
 
     /* footer */

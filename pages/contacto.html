@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contactos</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
    
@@ -18,66 +18,104 @@
             </a>
            
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="../index.html"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="paternindad.html">Início</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="paternindad.html">Paternidad</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="actividades.html">Actividad</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="ubicacion.html">Ubicacion</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="paternindad.html">Paternidad</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="actividades.html">Actividad</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mensajes.html">Mensajes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
                 </div>
-              </nav>
+              </div>
+            </nav>
              </header>
 
              <h1 class="h1__titulo" > Universidad de los Papas</h1>
              <p class="p__titulo">Por que ser padre es una arte...</p> 
            
-             <h2 class="h2__contactos"> Contactos </h2>
              
-     <form class="form__contactos">
-            <div>
-                 <label for="nombre-apellido">Nombre y Apellido <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido" required> </label>
-               
-            </div>
-            <div>
-                <label for="telefone">Telefono  <input type="tel" id="telefone"></label>
-           
-        </div>
-        <div>
-            <label for="correo">Correo eletrónico <input type="email" id="correo"></label>
+  </head>
 
-        </div>
-        <div>
-            <label for="mensaje">Deje su mensaje <textarea id="mensaje" cols="30" rows="10"></textarea> </label>
-           
-        </div>
-        <input id="input"
-        type="submit" value="Enviar formulario">
-        <input id="input" type="reset" value="Borrar formulario">
-        </form>
-    </section> 
 
-    <footer class="inicio__footer">Todos los derechos reservados a Fernando Pitale</footer>
+<body>  
+  
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
             
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+               
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+
+  <p class="texto__ubicacion">
+    Podrá encontrarnos en esta dirección </p>
+    
+    <div class="mapa">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104657.70577423919!2d-54.98154485023045!3d-34.942738300745965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575059ec8c40bbd%3A0x9bdd0183c2d3cf93!2sPunta%20del%20Este%2C%20Departamento%20de%20Maldonado!5e0!3m2!1ses-419!2suy!4v1671332282840!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+</section>
+
+
+</body>
+</html>   
        
-                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 

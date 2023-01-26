@@ -1,13 +1,10 @@
-/* estilos globales */
-* {
-  margin: 0;
-}
-
+/*  estilos globales */
+ 
 html {
   font-size: 62.5%;
 }
 
-img {
+img{
   max-width: 100%;
 }
 
@@ -27,7 +24,7 @@ header {
 
 .navbar{ background-color: #368ff5;
 font-size: 1.5rem;
-s
+
 }
 
 /* gradiente */
@@ -67,6 +64,11 @@ a {
     font-size: 1.5em;
     margin-bottom: 3rem;
   }
+
+  .iframe{
+    width: 50%; 
+    }
+    
 
   .p__video{
     font-size: 2.5rem;
@@ -416,7 +418,9 @@ flex-wrap:wrap ;}
            .video__contenedor {
             flex-direction: row;
          }
-  
+
+         .iframe{
+          width:50%}             
          /* estilo pagina paternidad */
              .paternidad__fotomanos{ 
               flex-direction: row;
@@ -446,3 +450,4 @@ flex-wrap:wrap ;}
            background-color:#368ff5;
           }
 
+        
